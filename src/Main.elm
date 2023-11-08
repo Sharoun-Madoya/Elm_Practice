@@ -9,10 +9,12 @@ type Msg = Increment | Decrement
 type alias Model =
     { count : Int }
 
+-- Model to hold the state of the counter
 initialModel : Model
 initialModel =
     { count = 0 }
 
+-- Update function to update the model based on messages
 update : Msg -> Model -> Model
 update msg model =
     case msg of
@@ -22,6 +24,8 @@ update msg model =
         Decrement ->
             { model | count = model.count - 1 }
 
+
+-- View function to render the HTML
 view : Model -> Html Msg
 view model =
     div []
@@ -30,6 +34,9 @@ view model =
         , button [ onClick Increment ] [ text "+" ]
         ]
 
+
+
+-- Main function to start the Elm application
 main : Program () Model Msg
 main =
     Browser.sandbox
