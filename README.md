@@ -20,3 +20,6 @@ elm make src/Main.elm --optimize --output=elm.js
 
 
 This adds these dependencies into your elm.json file, making these packages available in your project. That will let you say import Http and use functions like Http.get in your programs.
+
+Install elm-test and elm-format by running npm install -g elm-test elm-format in a terminal
+(Optional) Install elm-review via npm install -g elm-review in a terminal and enable it in your settings

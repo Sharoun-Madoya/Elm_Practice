@@ -37,6 +37,7 @@ view model =
 
 
 -- Main function to start the Elm application
+
 main : Program () Model Msg
 main =
     Browser.sandbox
