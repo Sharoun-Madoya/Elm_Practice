@@ -1,4 +1,4 @@
-
+{-teaching you how to comment-}
 module Sub exposing(..)
 import Html exposing (Html, div, text)
 add : Int -> Int -> Int
@@ -24,4 +24,4 @@ four= add 2 (1*2)
 main : Html msg
 main =
     div []
-        [ text <| "Result: " ++ String.fromInt five]
+        [ text <| "Result: " ++ String.fromInt fourteen]
